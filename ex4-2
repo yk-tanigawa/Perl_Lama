@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+#use 5.012;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+sub total{
+# 配列を受け取ってその和を返す。
+    my($sum) = shift @_;
+    foreach(@_){
+	$sum += $_;
+    }
+    $sum;
+}
+
+
+my $usr_total = total(1..1000);
+print "the total of those number is $usr_total.\n";

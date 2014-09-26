@@ -1,0 +1,21 @@
+#!/usr/bin/perl
+
+use 5.010;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+sub greet{
+    $_ = shift @_;
+    state $before;
+    if( defined($before) ){
+	print "Hi $_! $before is also here!\n";
+    }else{
+	print "Hi $_! You are the first one here!\n";
+    }
+    $before = $_;
+}
+
+greet("Fred");
+greet("Barney");

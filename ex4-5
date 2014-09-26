@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+
+use 5.010;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+sub greet{
+    $_ = shift @_;
+    state @before;
+    if( defined($before[0]) ){
+	print "Hi $_! I've seen: @before\n";
+    }else{
+	print "Hi $_! You are the first one here!\n";
+    }
+    push @before, $_;
+}
+
+greet("Fred");
+greet("Barney");
+greet("Wilma");
+greet("Betty");

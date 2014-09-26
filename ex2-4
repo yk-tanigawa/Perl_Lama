@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+use utf8;
+use warnings;
+#use diagnostics;
+
+print "please input two numbers:\n";
+
+$n = <STDIN>;
+$m = <STDIN>;
+
+print $n * $m . "\n";

@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+use utf8;
+use warnings;
+#use diagnostics;
+
+@name = qw{ fread betty barnery dino
+            whilma pebbles bamm-bamm };
+while(<STDIN>){
+    print $name[($_ % $#name) - 1] . "\n";
+}

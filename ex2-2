@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+use utf8;
+use warnings;
+#use diagnostics;
+
+$PI=3.141592654;
+
+print "please input the radius:\n";
+$r = <STDIN>;
+print 2 * $PI * $r . "\n";

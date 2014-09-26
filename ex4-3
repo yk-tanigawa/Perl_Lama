@@ -1,0 +1,35 @@
+#!/usr/bin/perl
+
+#use 5.012;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+sub average{
+# 配列を受け取ってその平均を返す。
+    my $num = $#_ + 1;
+    my($sum) = shift @_;
+    foreach(@_){
+	$sum += $_;
+    }
+    $sum / $num;
+}
+
+sub above_average{
+    my $ave = average(@_);
+    my @list;
+    foreach(@_){
+	if($_ > $ave){
+	    push @list, $_;
+	}
+    }
+    @list;
+}
+
+my @fred = above_average(1..10);
+print "\@fred is @fred\n";
+print "(Should be 6 7 8 9 10)\n";
+my @barney = above_average(100, 1..10);
+print "\@barney is @barney\n";
+print "(Should be just 100)\n";

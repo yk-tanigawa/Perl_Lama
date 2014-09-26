@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+use utf8;
+use warnings;
+#use diagnostics;
+
+$PI=3.141592654;
+
+print "please input the radius:\n";
+$r = <STDIN>;
+
+if($r < 0){ # rが負の数であれば、0を表示する。
+  $r = 0;   # rを0にしておけば、結果は負となる。
+}
+
+print 2 * $PI * $r . "\n";

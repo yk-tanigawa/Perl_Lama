@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+use utf8;
+use warnings;
+#use diagnostics;
+
+print "please input a word and a number:\n";
+
+$c = <STDIN>;
+$n = <STDIN>;
+
+print $c x $n;
