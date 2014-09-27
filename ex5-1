@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+#use 5.012;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+my @lines;
+while(<>){
+    push @lines, $_;
+}
+while($_ = pop @lines){
+    print;
+}

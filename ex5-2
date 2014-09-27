@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+#use 5.012;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+foreach(1..3){
+    print "1234567890";
+}
+print "\n";
+
+while(<>){
+    chomp;
+    printf "%20s\n", $_;
+}
