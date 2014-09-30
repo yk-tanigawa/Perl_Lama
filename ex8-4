@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+# 正規表現を用いたマッチの練習
+# マッチパターンのテストプログラム
+
+use 5.014;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+
+while(<>){
+    chomp;
+    if(/(?<word>\w*a)\b/){
+	print "Matched: |$`<$&>$'|\$word contains $+{word}|\n";
+    } else {
+	print "No match: |$_|\n";
+    }
+}

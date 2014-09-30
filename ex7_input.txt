@@ -12,3 +12,10 @@ llama
 wilma fred
 fred wilma
 wilma
+wilma&fred
+Mrs. Wilma Flintstone
+I saw Wilma yesterday
+I, Wilma!
+This line contains extra spaces at the end of this line.  
+This line contains extra spaces at the end of this line. 
+This line does not contain extra spaces at the end of this line.

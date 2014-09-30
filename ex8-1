@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+
+# 正規表現を用いたマッチの練習
+
+use 5.014;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+
+while(<>){
+    chomp;
+    if(/match/){
+	print "Matched: |$`<$&>$'|\n";
+    } else {
+	print "No match: |$_|\n";
+    }
+}

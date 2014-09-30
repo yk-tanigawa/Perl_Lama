@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+# 正規表現を用いたマッチの練習
+# 行末に空白文字がある行をすべて表示するプログラム
+
+use 5.014;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+
+while(<>){
+    chomp;
+    if(/\s+\Z/){
+	print "$_:\n"
+    }
+}
