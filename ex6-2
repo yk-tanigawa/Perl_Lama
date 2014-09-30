@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+use 5.014;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+my %count;
+
+while(<STDIN>){
+    chomp;
+    $count{$_}++;
+}
+foreach (sort keys %count){
+    my $num = $count{$_};
+    print $_  . " appears " . $num . " time(s).\n";
+}

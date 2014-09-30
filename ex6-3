@@ -1,0 +1,28 @@
+#!/usr/bin/perl
+
+# %ENVの全てのキーとその値を表示するプログラム
+
+use 5.014;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+
+my %count;
+
+my $len = -1;
+
+foreach (keys %ENV){
+    if(length > $len){
+	$len = length;
+    }
+}
+
+my $format = "%-" . $len . "s %s\n";
+
+foreach (sort keys %ENV){
+    my $val = $ENV{$_};
+    printf $format, $_, $val;
+#    print $_ . "\t" . $val . "\n";
+}

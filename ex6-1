@@ -1,0 +1,24 @@
+#!/usr/bin/perl
+
+use 5.014;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+my %name = (
+    fred   => 'flintstone',
+    barney => 'rubble',
+    wilma  => 'flintstone',
+    );
+
+print "please input some name:\n";
+
+while(<STDIN>){
+    chomp;
+    if ( exists $name{$_}){
+	print $_ . "'s family name is " . $name{$_} .".\n"; 
+    }else{
+	print "We don't know ". $_ ."'s family name\n";
+    }
+}
