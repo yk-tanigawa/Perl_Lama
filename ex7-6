@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+
+# 正規表現を用いたマッチの練習
+
+use 5.014;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+
+while(<>){
+    chomp;
+    if(m/wilma/){
+	if(m/fred/){
+	    print $_ ."\n";
+	}
+    }
+}

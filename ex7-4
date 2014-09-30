@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+# 正規表現を用いたマッチの練習
+
+use 5.014;
+use utf8;
+use warnings;
+#use diagnostics;
+use strict;
+
+
+while(<>){
+    chomp;
+    if(m/\b[A-Z][a-z]*\b/){
+	print $_ ."\n";
+    }
+}

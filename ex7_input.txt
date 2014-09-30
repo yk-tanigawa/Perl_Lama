@@ -1,0 +1,14 @@
+# これは，7章の練習問題をテストするための入力ファイル
+Fred
+frederick
+Alfred
+fred flintstone
+Mr. Slate
+Mr. Fred
+FRED
+Mississippi
+Bamm-Bamm
+llama
+wilma fred
+fred wilma
+wilma
